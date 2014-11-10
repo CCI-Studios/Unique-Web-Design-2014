@@ -25,6 +25,13 @@ body {
 	margin-left: 10%;
 	text-shadow: 2px 2px 2px rgba(13,104,166, 0.75);
 }
+#headerText a {
+	color:#FFF;
+	text-decoration:none;
+}
+#headerText a:hover {
+	color:#f7941e;
+}
 #ocelot {
 	height: 380px;
 	background-image: url(../img/ocelote-bg.png);
@@ -67,6 +74,13 @@ header {
 	line-height: 24px;
 	text-shadow: 2px 2px 2px rgba(13,104,166, 0.2);
 }
+#content p a {
+	color: #0e76bc;
+	text-decoration: underline;
+}
+#content p a:hover {
+	color:#f7941e;
+}
 /*CONTACT*/
 #contact {
 	height: 260px;
@@ -107,6 +121,16 @@ header {
 #contact li p {
 	font-size: 24px;
 	margin-left: 40px;
+}
+#contact li p a {
+	color:#fff;
+}
+#contact li p a {
+	color:#fff;
+	text-decoration: none;
+}
+#contact li p a:hover {
+	color: #0e76bc;
 }
 #contact img {
 	margin-top: -20px;
