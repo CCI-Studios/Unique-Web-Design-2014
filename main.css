@@ -32,15 +32,6 @@ body {
 #headerText a:hover {
 	color:#f7941e;
 }
-
-a
-{
-	text-decoration: none;
-}
-a:hover
-{
-	text-decoration: underline;
-}
 #ocelot {
 	height: 380px;
 	background-image: url(../img/ocelote-bg.png);
@@ -154,11 +145,6 @@ header {
 	font-size: 25px;
 }
 
-#contact .form-link  p a {
-	color:#fff;
-}
-
-
 .form
 {
 display: none;
@@ -166,11 +152,6 @@ padding: 20px 0;
 margin:0 auto;
 width:750px;
 overflow: hidden;
-}
-
-.open
-{
-	text-decoration: underline;
 }
 
 .form p
@@ -183,7 +164,6 @@ overflow: hidden;
 	height: 30px;
 	border: 1px solid #0e76bc;
 	margin-top: 10px;
-	padding: 0px 5px;
 }
 
 
@@ -195,14 +175,13 @@ overflow: hidden;
 .alert-success
 {
 	text-align: center;
-	padding: 20px;
+	height:70px;
 }
 textarea
 {
 	width: 300px;
 	height:123px;
 	border: 1px solid #0e76bc;
-	padding: 0px 5px;
 }
 
 .form .field
@@ -222,8 +201,8 @@ p.help-block
 
 input[type="checkbox"] + label
 {
-		 padding: 10px 15px;
-		height: 15px;
+		 padding: 10px 20px;
+		height: 20px;
 		display: block;
 		cursor: pointer;
 		background: url(../img/check-box.png) left center no-repeat; 
@@ -231,8 +210,8 @@ input[type="checkbox"] + label
 
 input[type="checkbox"]:checked + label
 {
-	 padding: 10px 15px;
-	height: 15px;
+	 padding: 10px 20px;
+	height: 20px;
 	display: block;
 	cursor: pointer;
 	background: url(../img/checked-box.png) left center no-repeat;
@@ -270,6 +249,16 @@ input[type="submit"]
 	color: white;
 	font-size: 20px;
 }
+
+#contact .form-link  p a {
+	color:#fff;
+	text-decoration: none;
+}
+#contact .form-link  p a:hover {
+	color: #0e76bc;
+	text-decoration: underline;
+}
+
 
 
 #contact img {
