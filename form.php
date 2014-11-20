@@ -10,12 +10,13 @@ $data 			= array(); 		// array to pass back data
 		$errors['msg'] = 'Message is required.';
 
 
-	if ( ! empty($errors)) {
+	if ( ! empty($errors)) 
+	{
 		$data['success'] = false;
 		$data['errors']  = $errors;
-	} else {
-
-	
+	} 
+	else 
+	{
 	$to = "lbujaki@ccistudios.com";
 	$subject="Website Inquiry";
 	$name = $_POST['name'];
@@ -23,8 +24,6 @@ $data 			= array(); 		// array to pass back data
 	$msg=  $_POST['msg'];
 	$email= $_POST['email'];
 	$check= $_POST['check'];
-
-
 
 	$headers = "MIME-Version: 1.0" . "\r\n";
 	$headers .= " X-Priority: 2\nX-MSmail-Priority: high" . "\r\n";
@@ -34,11 +33,11 @@ $data 			= array(); 		// array to pass back data
 	$message= 'Name:  '.$name ."\r\n" .'Email:  '.$email ."\r\n" .'Phone:  '.$phone ."\r\n" .'Message:  '.$msg ."\r\n" .'Stay connected:  '.$check ;
 	mail($to,$subject,$message,$headers);
 
-		$data['success'] = true; 
-		$data['message'] = "Thank You<br>We appreciate your inquiry and will be in touch shortly!";
+	$data['success'] = true; 
+	$data['message'] = "Thank You<br>We appreciate your inquiry and will be in touch shortly!";
+	
 	}
 
 	echo json_encode($data);	
 
-	
 ?>

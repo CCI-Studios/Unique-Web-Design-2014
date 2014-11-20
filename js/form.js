@@ -1,37 +1,36 @@
-// magic.js
+
 $(document).ready(function() {
 
-	// process the form
+
 	$('form').submit(function(event) {
 
 		$('.form-group').removeClass('has-error'); // remove the error class
 		$('.help-block').remove(); // remove the error text
 
-		// get the form data
-		// there are many ways to get this data using jQuery (you can use the class or id also)
-		if ($('#check').is(":checked")) {
-
+	
+		if ($('#check').is(":checked")) 
+		{
 			var check=$('#check').val();
 		}
+
 		var formData = {
-			'name' 				: $('input[name=name]').val(),
+			'name' 					: $('input[name=name]').val(),
 			'phone' 				: $('input[name=phone]').val(),
 			'check' 				: check,
-			'email' 			: $('input[name=email]').val(),
-			'msg' 	: $('#msg').val()
+			'email' 				: $('input[name=email]').val(),
+			'msg' 					: $('#msg').val()
 		};
 
-		// process the form
 		$.ajax({
-			type 		: 'POST', // define the type of HTTP verb we want to use (POST for our form)
-			url 		: 'form.php', // the url where we want to POST
-			data 		: formData, // our data object
-			dataType 	: 'json', // what type of data do we expect back from the server
+			type 		: 'POST', 
+			url 		: 'form.php',
+			data 		: formData, 
+			dataType 	: 'json',
 			encode 		: true
 		})
 			// using the done promise callback
-			.done(function(data) {
-
+			.done(function(data) 
+			{
 				// log data to the console so we can see
 				console.log(data); 
 				if ( ! data.success) {
