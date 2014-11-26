@@ -16,6 +16,8 @@ $(document).ready(function() {
 		var formData = {
 			'name' 					: $('input[name=name]').val(),
 			'phone' 				: $('input[name=phone]').val(),
+			'url' 				: $('input[name=url]').val(),
+
 			'check' 				: check,
 			'email' 				: $('input[name=email]').val(),
 			'msg' 					: $('#msg').val()

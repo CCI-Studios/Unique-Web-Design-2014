@@ -25,6 +25,12 @@ body {
 	margin-left: 10%;
 	text-shadow: 2px 2px 2px rgba(13,104,166, 0.75);
 }
+
+.antispam
+{
+	display: none;
+}
+
 #headerText a {
 	color:#FFF;
 	text-decoration:none;
